@@ -1,0 +1,61 @@
+    #education{
+        height: 100%;
+        width: 100%;
+    }
+
+    h1#edu{
+        margin: 10px;
+        font-size: 400%;
+    }
+
+    h1#institution{
+        font-size: 200%;
+    
+    } 
+
+    h3#degree{
+        font-size: 150%;
+        line-height: 20%;
+        
+    }
+
+    h4{
+        line-height: 20%;
+        font-size: 140%;
+        
+
+    }
+    
+
+    .edu {
+        display: grid;
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-columns: auto ;
+        padding: 10px;
+    }
+      
+    .du,.itsc,.ndc {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        transition: box-shadow .3s;
+        padding: 20px;
+        margin: 0,30px;
+        border: 2px solid #ccc;
+        background: #fff;
+        height: 90%;
+        width: 150%;       
+    }
+
+    .ndc:hover{
+        box-shadow: 0 0 11px rgb(33,33,33);
+    }
+
+    .du:hover{
+        box-shadow: 0 0 11px rgb(33,33,33);
+    }
+    .itsc:hover{
+        box-shadow: 0 0 11px rgb(33,33,33);
+
+    }

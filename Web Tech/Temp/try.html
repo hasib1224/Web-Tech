@@ -7,41 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="nav.css" rel="stylesheet">
+    <link href="education.css" rel="stylesheet">
     <style>
 
-    .ndc {
-        
-        transition: box-shadow .3s;
-        padding: 20px;
-        /* margin: 50px; */
-        border: 1px solid #ccc;
-        background: #fff;
-        height: 170;
-       
-    
-    }
-
-
-    .ndc:hover {
-    box-shadow: 0 0 11px rgb(33,33,33); 
-    } 
-
-    .clg-desc{
-       position:relative;
-       
-    }
-
-
+ 
 
 .bold-text{
     font: 700;
     font-weight: bold;
-}
-
-.image{
-    padding: 40px,40px;
-    position:relative; 
-    justify-content: center;
 }
 
 .box2{
@@ -55,10 +28,6 @@
 .home-desc{
     font-size: xx-large;
     color:darkgray;
-}
-
-h1,p{
-    margin: 20px;
 }
 
 
@@ -96,8 +65,10 @@ p.home-desc {
   }
 }
 
-
-
+#home{
+    height: 150%;
+    width: 100%;
+}
 
 
 
@@ -106,29 +77,34 @@ p.home-desc {
 <body>
 
     <div id="home">
-        <img class="image" src="perfect.jpeg".jpeg width="1390px" height="300" " >  
-        <div class="box2"><span class="element"></span></div>
+        <img class="image" src="cover.jpeg".jpeg width="1390px" height="300" " >  
+        <!-- <div class="box2"><span class="element"></span></div> -->
+        
+        
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="#home"> Home</a> </li>
+                    <li><a href="#education"> Education</a></li> 
+                    <li><a href="#"> Skills</a></li>  
+                    <li><a href="#"> Projects</a></li>
+                    <li><a href="#">Awards and Scholarship</a></li> 
+                    <li><a href="#"> Hobby</a></li> 
+                    <li> <a href="#">Social</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#home"> Home</a> </li>
-                <li><a href="#education"> Education</a></li> 
-                <li><a href="#"> Skills</a></li>  
-                <li><a href="#"> Projects</a></li>
-                <li><a href="#">Awards and Scholarship</a></li> 
-                <li><a href="#"> Hobby</a></li> 
-                <li> <a href="#">Social</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
-        </nav>
+        </div>
+        
 
-
+        
 
         <img  src="profile.jpg".jpeg class="prof-image"  " >
 
 
         <div>
-            <h1 class="hello">👋<br>Hi, I'm Hasib Abdullah Sarker</h1>
+            <h1 class="hello">👋<br>Hi, I'm Hasib Abdullah<br> Sarker</h1>
             <p class="home-desc">I'm a frontend web developer. <br>Currently I'm working on XYZ company.<br><br><br><br><br><br></p>
         </div>
 
@@ -136,21 +112,43 @@ p.home-desc {
 
 
     <div id="education">
-        <h1 >Education</h1>
-        
-        <div class="ndc">
-            <img  src="ndc.png" height="150">
-            <div class="clg-desc">
-                <h1 >Notre Dame College</p>
-                <h3 >Higher Secondary</h3>
-                <h4>July 2017 - July 2019</h4> 
-                <h4>Dhaka, Bangladesh</h4>
+
+        <h1 id="edu" >Education</h1>
+
+        <div class="edu">
+
+            <div class="du">
+                <img  src="du.png" height="150"> 
+                <div class="du-desc">
+                    <h1 id="institution">University Of Dhaka</h1>
+                    <h3 id="degree" >Software Engineering</h3>
+                    <h4>January 2020 -</h4> 
+                    <h4>Dhaka, Bangladesh</h4>
+                </div>      
             </div>
-               
-        </div>
+            
+            
+            <div class="ndc">
+                <img  src="ndc.png" height="150"> 
+                <div class="clg-desc">
+                    <h1 id="institution">Notre Dame College</h1>
+                    <h3 id="degree" >Higher Secondary</h3>
+                    <h4>July 2017 - July 2019</h4> 
+                    <h4>Dhaka, Bangladesh</h4>
+                </div>      
+            </div>
 
-
-    </div>
+            <div class="itsc">
+                <img  src="itsc.png" height="150"> 
+                <div class="itsc-desc">
+                    <h1 id="institution">Ibn taimiya School & College</h1>
+                    <h3 id="degree" >Secondary </h3>
+                    <h4>January 2011 - January 2017</h4> 
+                    <h4>Cumilla, Bangladesh</h4>
+                </div>      
+            </div>
+        
+            
 
 
    
