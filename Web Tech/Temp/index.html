@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
+    <link href="education.css" rel="stylesheet">
+    <style>
+
+
+.bold-text{
+    font: 700;
+    font-weight: bold;
+}
+
+.box2{
+    margin: 20;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    bottom: 400px;
+    font-size:xx-large;
+}
+
+.home-desc{
+    font-size: xx-large;
+    color:darkgray;
+}
+
+
+
+body {
+  margin: 50px;;
+  --nav-load-time: 300ms;
+  --nav-link-load-time: 300ms;
+  --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
+}
+
+
+h1.hello {
+    font-size:400%;
+  animation: article-load 300ms ease-in var(--article-load-delay);
+  animation-fill-mode:forwards;
+  opacity:0;
+  
+}
+
+p.home-desc {
+  animation: article-load 300ms ease-in calc(var(--article-load-delay) + 200ms);
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes article-load {
+  from{
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(10px);
+    opacity: 1000;
+  }
+}
+
+#home{
+    height: 150%;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+
+
+    <div id="home">
+        <img  src="cover.jpeg".jpeg width="1390px" height="300" " >  
+        <!-- <div class="box2"><span class="element"></span></div> -->
+        
+        
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="#home"> Home</a> </li>
+                    <li><a href="#education"> Education</a></li> 
+                    <li><a href="#"> Skills</a></li>  
+                    <li><a href="#"> Projects</a></li>
+                    <li><a href="#">Awards and Scholarship</a></li> 
+                    <li><a href="#"> Hobby</a></li> 
+                    <li> <a href="#">Social</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        
+
+        
+
+        <img  src="profile.jpg".jpeg class="prof-image"  " >
+
+
+        <div>
+            <h1 class="hello">👋<br>Hi, I'm Hasib Abdullah<br> Sarker</h1>
+            <p class="home-desc">I'm a frontend web developer. <br>Currently I'm working on XYZ company.<br><br><br><br><br><br></p>
+        </div>
+
+    </div>
+
+
+    <div id="education">
+
+        <h1 id="edu" >Education</h1>
+
+        <div class="edu">
+
+            <div class="du">
+                <img  src="du.png" height="150"> 
+                <div class="du-desc">
+                    <h1 id="institution">University Of Dhaka</h1>
+                    <h3 id="degree" >Software Engineering</h3>
+                    <h4>January 2020 -</h4> 
+                    <h4>Dhaka, Bangladesh</h4>
+                </div>      
+            </div>
+            
+            
+            <div class="ndc">
+                <img  src="ndc.png" height="150"> 
+                <div class="clg-desc">
+                    <h1 id="institution">Notre Dame College</h1>
+                    <h3 id="degree" >Higher Secondary</h3>
+                    <h4>July 2017 - July 2019</h4> 
+                    <h4>Dhaka, Bangladesh</h4>
+                </div>      
+            </div>
+
+            <div class="itsc">
+                <img  src="itsc.png" height="150"> 
+                <div class="itsc-desc">
+                    <h1 id="institution">Ibn taimiya School & College</h1>
+                    <h3 id="degree" >Secondary </h3>
+                    <h4>January 2011 - January 2017</h4> 
+                    <h4>Cumilla, Bangladesh</h4>
+                </div>      
+            </div>
+        
+            
+
+
+   
+
+
+    <script src="type.js"> </script>
+    <script src="t.js" > </script>
+</div>    
+</body>
+</html>
+

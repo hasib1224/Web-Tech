@@ -1,12 +1,20 @@
 nav{
-    background-color:white;
-    padding: 10;
+   
+    padding: 8;
     color:black;
     font-size: x-large;
     font-weight:500;
     margin: 0; 
-    position:relative;
-    top: 10;   
+ 
+     
+}
+.nav-bar
+{
+    width: 100%;
+    z-index: 9999; 
+    background-color:cornflowerblue;
+    position:sticky;
+    top: 0;  
 }
 
 
@@ -42,11 +50,6 @@ a{
         transform: scaleX(-100px);
         opacity: 0;
     }
-
-    /* 50%{
-        font: xx-large;
-
-    } */
     
     100% {
         transform: scaleX(0px);
@@ -82,10 +85,6 @@ a{
 
 
 
-  .clg-desc{
-    position:relative;
-    
- }
-
+ 
  
 

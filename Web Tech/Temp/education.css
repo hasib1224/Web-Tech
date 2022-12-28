@@ -1,9 +1,9 @@
-    #education{
-        height: 100%;
-        width: 100%;
-    }
+#education{
+    height: 208%;
+}
 
-    h1#edu{
+    h1#edu-head{
+        padding-top: 80px;
         margin: 10px;
         font-size: 400%;
     }
@@ -45,7 +45,7 @@
         border: 2px solid #ccc;
         background: #fff;
         height: 90%;
-        width: 150%;       
+        width: inherit;       
     }
 
     .ndc:hover{
