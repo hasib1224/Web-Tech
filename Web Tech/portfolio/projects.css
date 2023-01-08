@@ -1,0 +1,79 @@
+h1#project-head{
+    padding-top:80px;
+    margin-bottom: 10px;
+    margin: 0px;
+    font-size: 350%;
+}
+.game h4{
+   color:coral;
+
+}
+
+.portfolio h4{
+    color:coral;
+}
+
+.cp h4{
+    color:coral;
+}
+
+
+.project-table {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    grid-template-columns: 30% 30% 30% ;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.game,.portfolio,.cp {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    transition: box-shadow .3s;
+    padding: 20px;
+    margin: 0,30px;
+    border: 2px solid #ccc;
+    background: #fff;
+    height: 90%;
+    width: inherit; 
+    position: relative;      
+}
+
+
+
+.game:hover{
+    box-shadow: 0 0 11px rgb(33,33,33);
+}
+
+.portfolio:hover{
+    box-shadow: 0 0 11px rgb(33,33,33);
+}
+.cp:hover{
+    box-shadow: 0 0 11px rgb(33,33,33);
+
+}
+
+.game, .portfolio{
+    font-size: x-large;  
+}
+
+.cp{
+    font-size: 20;
+}
+
+.button{
+    height: 30px;
+    float:right;
+    background-color:coral;
+    color:white;
+    font-size: large;
+}
+
+.button:hover{
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px 5px goldenrod
+
+}

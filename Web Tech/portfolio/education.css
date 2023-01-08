@@ -1,11 +1,12 @@
 #education{
-    height: 208%;
+    height: 240%;
 }
 
     h1#edu-head{
         padding-top: 80px;
-        margin: 10px;
-        font-size: 400%;
+        margin-bottom: 10px;
+        margin: 0px;
+        font-size: 350%;
     }
 
     h1#institution{
@@ -35,7 +36,7 @@
         padding: 10px;
     }
       
-    .du,.itsc,.ndc {
+    .du,.itsc,.ndc,.result {
         background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid rgba(0, 0, 0, 0.8);
         padding: 20px;
@@ -59,3 +60,25 @@
         box-shadow: 0 0 11px rgb(33,33,33);
 
     }
+
+    .result:hover{
+        box-shadow: 0 0 11px rgb(33,33,33);
+    }
+
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        font-size: x-large;
+      }
+      th, td {
+        background-color: #96D4D4;
+      }
+      table{
+        width: 80%;
+      }
+
+      h1#result-head{
+        margin-bottom: 50px;
+        margin: 0px;
+        font-size: 300%;
+      }

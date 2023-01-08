@@ -1,0 +1,50 @@
+
+.fb,.insta,.in,.git,.dis{
+   width:40px;
+   height:40px;
+   margin-left: -2%;}
+
+.fb:hover{
+   border-radius: 50%;
+   /* verical horizontal intensity radiuss */
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+}
+
+.insta:hover{
+   border-radius: 30%;
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+
+}
+
+.in:hover{
+   border-radius: 30%;
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+
+
+}
+
+.git:hover{
+   border-radius: 45%;
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+}
+
+
+.dis:hover{
+   border-radius: 45%;
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+}
+
+.gmail{
+   width:40px;
+   height:40px;
+   margin-left: -2%;
+   border-radius: 30%;
+
+}
+
+.gmail:hover{
+   box-shadow: 0px 0px 10px 5px goldenrod; 
+}
+
+
+

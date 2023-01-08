@@ -1,0 +1,59 @@
+h1#awards-head{
+    padding-top:80px;
+    margin-bottom: 10px;
+    margin: 0px;
+    font-size: 350%;
+}
+
+
+
+.awards-table {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 49% 49% ;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#scholar,#award {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    transition: box-shadow .3s;
+    padding: 20px;
+    margin: 0,30px;
+    border: 2px solid #ccc;
+    background: #fff;
+    height: 90%;
+    width: inherit; 
+    position: relative; 
+    
+}  
+
+#awards-desc{
+    font-size: x-large;
+    text-align: center;
+}
+
+strong{
+    color:coral;
+}
+
+
+#scholar li:before{
+    content: "\1F3C6";
+    font-size: x-large;
+}
+
+#scholar:hover{
+    box-shadow: 0 0 11px rgb(33,33,33);
+
+}
+
+#award:hover{
+    box-shadow: 0 0 11px rgb(33,33,33);
+
+}
+

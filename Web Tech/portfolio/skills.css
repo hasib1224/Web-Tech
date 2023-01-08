@@ -1,0 +1,37 @@
+h1#skill-head{
+    padding-top:80px;
+    margin-bottom: 10px;
+    margin: 0px;
+    font-size: 350%;
+}
+
+#skill-title, #pro-skill, #learn-skill{
+    display: inline;
+    color:goldenrod;
+}
+
+#pro-skill, #learn-skill{
+    display: inline;
+    color:rgb(101, 100, 100);
+    font-size:x-large;
+}
+
+#skill-desc{
+    padding-top: 10px;
+    font-size: x-large;
+    line-height: 5px;
+    color:rgb(101, 100, 100);
+}
+
+li{
+    list-style: none;
+}
+
+#pro-skill li:before{
+    content: "\26A1";
+    font-size: x-large;
+}
+
+#learn-skill li:before{
+    content: "\231B";
+}
