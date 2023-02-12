@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styleTower.css" 
+</head>
+<body>
+    
+ 
+    <button onclick="document.getElementById('p1').innerHTML='WebTech'"> ChangeParagraph</button>   
+    <p id="p">
+        70
+    </p>
+    <p id="p1">mou@iit</p>
+    <p id="p2">123</p>
+    
+    <script>
+        let email="mou@iit";
+        let pass="123";
+
+        let em=document.getElementById("p1").innerHTML;
+        let pas=document.getElementById("p2").innerHTML;
+        for (let i = 0; i < 5; i++) {
+
+            if(email===em && pass===pas) {document.write("Loo in"); break;};
+        }
+
+        // var value=parseInt(document.getElementById("p2").innerHTML);
+        // if (value==80) {
+        //     document.write("A+");
+        // }
+        // else if (value==70) {
+        //     document.write("A");
+        // }
+        // else if (value==60) {
+        //     document.write("A-");
+        // }
+        // document.write("hi");
+        
+    </script>
+
+
+
+</body>
+</html>

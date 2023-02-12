@@ -1,0 +1,29 @@
+#d1,#d2,#d3{
+    float: left;
+    border-style: solid;
+    border-color: brown;
+    width: 31.5%;
+    height: 40%;
+    /* padding: 10px; */
+    
+   
+}
+
+#d1 button{
+    /* width: 40%;
+    height: 20%; */
+
+}
+
+#extrab button{
+    width: 10%;
+    height: 10%;
+
+}
+
+#fix2, #fix1, #fix3{
+    /* width: 40%;
+    height: 50px; */
+    background-color: blueviolet;
+
+}

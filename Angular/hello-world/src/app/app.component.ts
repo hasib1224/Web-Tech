@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello-Hasib';
+  public name="Parent-component";
+  public message="";
+
 }

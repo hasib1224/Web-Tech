@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            
+        } */
+        .towers{
+            width: 30%;
+            border: 2px solid black;
+            height: 400px;
+            float:left;
+            border-collapse: collapse;
+            align-items: center;
+        }
+        /* .moveContainer{
+            clear: left;
+            width: 90%;
+            border: 2px solid;
+        } */
+        .Pieces{
+            display: block;
+            height: 15%;
+            width: 30%;
+        }
+        #fix{
+            float: left;
+            display: block;
+            height: 15%;
+            width: 30%;
+
+        }
+        .moves{
+            float: left;
+            display: ;
+        }
+        .actionButtons{
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "conatiner">
+        <div class = "towers" id = "tower1">
+            <button id = "btn2" class = "Pieces">2</button>
+            <button id = "btn4" class = "Pieces">4</button>
+            <button id = "btn3" class = "Pieces">3</button>
+            <button id = "btn1" class = "Pieces">1</button>
+        </div>
+
+        <div class = "towers" id = "tower2">
+
+        </div>
+
+        <div class = "towers" id = "tower3">
+
+        </div>
+
+        <button id="fix">1</button>
+        <button id="fix" >2</button>
+        <button id="fix" >3</button>
+
+
+    </div>
+    <div class = "moveConatainer">
+        <div class = "moves">
+            <button onclick="swap_1to2()" class = "actionButtons">1->2</button>
+            <button onclick="swap_2to3()" class = "actionButtons">2->3</button>
+            <button onclick="swap_3to1()" class = "actionButtons">3->1</button>
+        </div>
+        <div class = "moves">
+            <button onclick="swap_3to2()" class = "actionButtons">3->2</button>
+            <button onclick="swap_2to1()" class = "actionButtons">2->1</button>
+            <button onclick="swap_1to3()" class = "actionButtons">1->3</button>
+        </div>
+    </div>
+
+    <script>
+        
+        function swap_1to2(){
+            tower1 = document.getElementById("tower1");
+            btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower2");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+        function swap_2to3(){
+            let tower1 = document.getElementById("tower2");
+            let btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower3");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+        function swap_3to1(){
+            let tower1 = document.getElementById("tower3");
+            let btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower1");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+        function swap_3to2(){
+            let tower1 = document.getElementById("tower3");
+            let btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower2");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+        function swap_2to1(){
+            let tower1 = document.getElementById("tower2");
+            let btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower1");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+        function swap_1to3(){
+            let tower1 = document.getElementById("tower1");
+            let btn1 = tower1.firstChild;
+            btn1.remove();
+
+            tower2 = document.getElementById("tower3");
+            btn2 = tower2.firstChild;
+            tower2.insertBefore(btn1,btn2);
+        }
+
+
+    </script>
+</body>
+</html>

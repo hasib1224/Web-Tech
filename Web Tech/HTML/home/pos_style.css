@@ -51,6 +51,9 @@ nav a:hover{
     float: right;
     height: 250px;
     width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
  }
  #pic{
    

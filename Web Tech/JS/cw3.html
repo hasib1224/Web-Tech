@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mydiv">
+        <p>This is X</p>
+        <p id="p2">This is Y</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <script>
+        let para = document.createElement("p");
+        para.innerText = "This is a paragraph";
+        document.body.appendChild(para);
+
+        const newNode = document.createElement("p");
+        // Create a text node:
+        const list = document.getElementById("myList");
+        list.insertBefore(newNode, list.children[0]);
+
+        // let pera2 =document.getElementById("p2");
+        // pera2.removeChild(pera2.firstChild);
+
+        
+
+
+        // let paras=document.getElementsByTagName("p");
+        // for(let i=0;i<paras.length;i++){
+        //     console.log(paras[i]);
+           
+        // }
+        // let mydiv=document.getElementById("mydiv");
+        // console.log(mydiv.nextSibling);
+    </script>
+    
+    
+</body>
+</html>
