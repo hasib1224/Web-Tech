@@ -43,5 +43,5 @@
         }
       ]
     },
-    "plugins": ["prettier", "react", "react-hooks"]
+    "plugins":["prettier","react","react-hooks"]
   }
