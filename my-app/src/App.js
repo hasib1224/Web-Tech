@@ -19,11 +19,13 @@
 
 
 import { BrowserRouter, Routes, Route, createBrowserRouter } from 'react-router-dom';
+import Dashboard from './components/Dashboard.js';
 import Homepage from './components/Homepage.js';
 // import Homepage from './Dashboard/Homepage.js';
 // import FindNursery from './Services/FindNursery/FindNursery.js';
 // import PlantInfo from './Services/PlantInfo/PlantInfo.js';
-import Roar from  './components/Homepage.js';
+import LogIn from './components/LogIn.js';
+import NavBar from './components/NavBar';
 
 // const route = createBrowserRouter([
 //   {
@@ -34,11 +36,15 @@ import Roar from  './components/Homepage.js';
 
 function App() {
   return (
+
     <div className="App">
       <header className="App-header">
+        <NavBar/>
         <BrowserRouter>
             <Routes>
-              <Route path="/components" element={<Homepage/>}/>
+              <Route path="/" element={<Homepage/>}/>
+              <Route path="/login" element={<LogIn/>}/>
+              <Route path="/dashboard" element={<Dashboard/>}/>
             </Routes>
         </BrowserRouter>
       </header>
