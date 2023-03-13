@@ -4,13 +4,12 @@
    
         <li *ngFor="let item of myItem">
            <h3>{{item.name}}</h3>
-            <p>price:{{item.price}}</p>
-            <p>price:{{item.quantity}}</p>
-            <button *ngIf="item.quantity>0">Buy</button>
+            <p>Price:{{item.price}}</p>
+            <p>Quantity:{{item.quantity}}</p>
+            <!-- <button *ngIf="item.quantity>0" (click)="requestView(item.name)">Buy</button>
             <button *ngIf="item.quantity<=0">Stock Out</button>
-            
-
-
+             -->
+            <button *ngIf="item.quantity>0" (click)="buyItem(item.id)">Buy</button>
         </li>
     
     

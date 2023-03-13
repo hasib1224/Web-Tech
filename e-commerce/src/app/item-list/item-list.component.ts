@@ -15,7 +15,20 @@ export class ItemListComponent implements OnInit {
     // myItem
     this.myItem=this.itemService.getItems();
     console.log(this.itemService.getItems());
-
   }
+
+  requestView(item_name:String): void{
+    // myItem
+    alert("Requested for");
+  }
+
+  buyItem(item_id:number):void{
+    // this.myItem[item_id].quantity=this.myItem[item_id].quantity-1;
+    // alert(this.myItem[item_id].quantity);
+  this.itemService.changeItems(item_id);
+  }
+
+
+
 
 }

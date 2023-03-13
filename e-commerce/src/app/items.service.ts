@@ -18,4 +18,12 @@ export class ItemsService {
     return this.items;
   }
 
+  changeItems(id:number):void{
+    this.items.forEach((element)=>{
+    if(element.id===id)
+    element.quantity--;
+    });
+
+  }
+
 }
