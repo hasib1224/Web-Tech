@@ -1,5 +1,18 @@
 <p>item-list works!</p>
 
 <ul>
-    <li *ngFor="let item of myItem">{{item.name}}</li>
+   
+        <li *ngFor="let item of myItem">
+           <h3>{{item.name}}</h3>
+            <p>price:{{item.price}}</p>
+            <p>price:{{item.quantity}}</p>
+            <button *ngIf="item.quantity>0">Buy</button>
+            <button *ngIf="item.quantity<=0">Stock Out</button>
+            
+
+
+        </li>
+    
+    
+    
 </ul>
