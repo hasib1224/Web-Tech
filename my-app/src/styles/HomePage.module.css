@@ -1,0 +1,19 @@
+
+
+.homePic {
+    background-image: url(../Assets/images/IIT.jpg);
+    
+    background-color: rgb(6, 6, 6);
+    background-size: 1450px 610px;
+    background-repeat: no-repeat;
+    padding: 290px;
+    
+    
+}
+
+span{
+    font-size: xx-large;
+    color: rgb(56, 3, 29);
+    font-weight:bolder;
+    
+}

@@ -1,24 +1,43 @@
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from "react-router-dom";
+import Nav from "./Nav";
+import iit from "../Assets/images/IIT.jpg";
+import classes from "../styles/HomePage.module.css";
+import Typed from "typed.js";
 
 export default function Homepage() {
-    const nav=useNavigate(); 
-    const findLogIn=()=>{
-        nav('/login');
-      }
+  // const nav=useNavigate();
+  // const findLogIn=()=>{
+  //     nav('/login');
+  //   }
 
-    return (
-        <>
-        <div>
-            <h1>This is Homepage</h1> 
-        </div>
+  const el = React.useRef(null);
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Welcome to SPL Management!!"],
+      typeSpeed: 50,
+    });
 
-        <div className='Homebody-Servdiv'>
-            <div>
-                <button className='App-Servbtn' onClick={findLogIn}>Log In</button>
-            </div>
-        </div>
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
+
+  return (
+    <>
+    <div>
+        <span ref={el} />
         
-        </>
-         
-    );
-  }
+
+      </div>
+    
+    <div className={classes.homePic}>
+    {/* <span ref={el} /> */}
+      
+      </div>
+      
+      
+      </>
+  );
+}

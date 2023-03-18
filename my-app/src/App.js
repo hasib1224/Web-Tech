@@ -1,57 +1,33 @@
-// import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
-// import roar from  './components/roar';
 
-
-// export default function App() {
-//   return (
-//     <>
-    
-//     <Router>
-//       <Routes>
-//         <Route path="/" component={<roar/>}/>
-//       </Routes>
-      
-//     </Router>
-//     </>
-//   );
-// }
-
-
-
-import { BrowserRouter, Routes, Route, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, createBrowserRouter,useNavigate } from 'react-router-dom';
 import Dashboard from './components/Dashboard.js';
 import Homepage from './components/Homepage.js';
-// import Homepage from './Dashboard/Homepage.js';
-// import FindNursery from './Services/FindNursery/FindNursery.js';
-// import PlantInfo from './Services/PlantInfo/PlantInfo.js';
-import LogIn from './components/LogIn.js';
-import NavBar from './components/NavBar';
 
-// const route = createBrowserRouter([
-//   {
-//     path: "/roar",
-//     element: <roar/>,
-// },
-// ]);
+import LogIn from './components/LogIn.js';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
+  // const navi=useNavigate();
   return (
-
+   
     <div className="App">
       <header className="App-header">
-        <NavBar/>
+        <Nav/>
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Homepage/>}/>
-              <Route path="/login" element={<LogIn/>}/>
+              <Route exact path="/login" element={<LogIn/>}/>
               <Route path="/dashboard" element={<Dashboard/>}/>
             </Routes>
         </BrowserRouter>
+        <Footer/>
       </header>
     </div>
   );
 }
 
 export default App;
+
 
 

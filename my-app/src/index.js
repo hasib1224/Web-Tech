@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals'
 import App from './App';
-import Clock from './Clock-Comp';
-import App3 from './components/Homepage';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
