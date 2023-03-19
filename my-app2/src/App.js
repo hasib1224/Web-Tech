@@ -12,7 +12,6 @@ import TeachProfList from './components/TeachProfList.js';
 import EditInfo from './components/StuEditInfo.js';
 import ManagerMark from './components/ManagerMark.js';
 import ManagerProfile from './components/ManagerProfile.js'
-import markingCont from './components/ManagerMark';
 
 
 function App() {

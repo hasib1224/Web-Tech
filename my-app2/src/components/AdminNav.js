@@ -1,8 +1,18 @@
-
+import React from "react";
 import classes from "../styles/Nav.module.css";
-
+import Notice from "./Modal";
+import { useState } from "react";
 
 export default function AdminNav(props) {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+  const handleSave = () => {
+    // Save changes logic here
+    handleClose();
+  };
+
   return (
     <>
       <div className={classes.nav1}>
@@ -37,9 +47,26 @@ export default function AdminNav(props) {
                 </li> */}
 
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
+                  {/* <a class="nav-link active" aria-current="page" href="/notice">
+                    Notice
+                  </a> */}
+
+                  <div>
+                    <button className="btn btn-primary" onClick={handleShow}>
+                      New Notice
+                    </button>
+                    <Notice
+                      show={showModal}
+                      handleClose={handleClose}
+                      handleSave={handleSave}
+                      title="Notification"
+                    >
+                      <p>
+                        On 20th March and 21st March, SPL-2 Presentation will be
+                        occured.Be Preapared .{" "}
+                      </p>
+                    </Notice>
+                  </div>
                 </li>
 
                 <li className="nav-item dropdown">
@@ -71,6 +98,34 @@ export default function AdminNav(props) {
                         SPL-3
                       </a>
                     </li>
+                  </ul>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Settings
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <a className="dropdown-item" href="/editInfo">
+                        Edit Information
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="#">
+                        Change Password
+                      </a>
+                    </li>
+                    <li>
+                      <hr className="dropdown-divider" />
+                    </li>
+                    <li></li>
                   </ul>
                 </li>
 

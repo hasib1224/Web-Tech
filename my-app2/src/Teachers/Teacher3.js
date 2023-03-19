@@ -1,6 +1,5 @@
 import React from "react";
-import StuNav from "./StuNav";
-import blank from "../Assets/images/blank.png";
+import img from "../Assets/images/ShoibSir.JPG";
 import icon from "../Assets/images/sch-icon.png";
 
 export default function TeachersProfileGrid() {
@@ -10,11 +9,11 @@ export default function TeachersProfileGrid() {
         <img
           class="card-img-top"
           style={{ margin: "20px" }}
-          src={blank}
+          src={img}
           alt="Card image cap"
         />
         <div class="card-body">
-          <h4 class="card-title">Teacher 1</h4>
+          <h4 class="card-title">Dr. Mohammad Shoyaib</h4>
           <h5>Professor IIT,DU</h5>
           <p class="card-text">Currently Working on .....</p>
           <br />

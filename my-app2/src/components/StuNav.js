@@ -51,7 +51,7 @@ export default function StuNav(props) {
 
                   <div>
                     <button className="btn btn-primary" onClick={handleShow}>
-                      New Notice
+                      Notification
                     </button>
                     <Notice
                       show={showModal}
