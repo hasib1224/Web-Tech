@@ -1,0 +1,16 @@
+.gap td{
+    background-color: rgb(219, 27, 27);
+   
+}
+
+
+th{
+    color: rgb(62, 35, 2);
+    font-size: x-large;
+}
+td{
+    
+    color: rgb(0, 0, 0);
+    font-size: large;
+
+}

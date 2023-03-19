@@ -1,0 +1,13 @@
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layout{
+    
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 5fr 2fr 2fr 2fr 2fr 1fr ;
+}
