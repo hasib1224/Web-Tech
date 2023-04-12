@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+      <label for="item-name">Name:</label>
+      <input type="text" class="form-control" id="name" name="item-name" [(ngModel)]="myItems.name">
+    </div>
+    <div class="form-group">
+      <label for="item-price">Price:</label>
+      <input type="number" class="form-control" id="price" name="item-price" [(ngModel)]="myItems.price">
+    </div>
+    <div class="form-group">
+        <label for="item-quantity">Quantity:</label>
+        <input type="number" class="form-control" id="quantity" name="item-quantity" [(ngModel)]="myItems.quantity">
+    </div>
+    <button class="btn btn-default btn-primary" (click)="update()">Save</button>
+  </form>
