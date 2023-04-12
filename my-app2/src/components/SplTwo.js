@@ -66,19 +66,7 @@ function MyTable2() {
             <td>bsse1210@iit.du.ac.bd</td>
             
           </tr>
-          <tr className={classes.gap} >
-            <td rowSpan="2">Team Five</td>
-            <td>1206</td>
-            <td>Galib</td>
-            <td>bsse1206@iit.du.ac.bd</td>
-            <td rowSpan="2"> </td>
-          </tr>
-          <tr >
-            <td>1256</td>
-            <td>Rashik</td>
-            <td>bsse1256@iit.du.ac.bd</td>
-            
-          </tr>
+          
 
           <tr >
             <td rowSpan="2">Team Three</td>
@@ -91,6 +79,71 @@ function MyTable2() {
             <td>1256</td>
             <td>Rashik</td>
             <td>bsse1256@iit.du.ac.bd</td>  
+          </tr>
+
+          <tr >
+            <td  rowSpan="2" >Team Four</td>
+            <td>1224</td>
+            <td>Hasib Abdullah</td>
+            <td>bsse1224@iit.du.ac.bd</td>
+            <td rowSpan="2">Moumita Asad</td>
+          </tr>
+          <tr >
+            <td>1255</td>
+            <td>Md. JUbaer</td>
+            <td>bsse1255@iit.du.ac.bd</td>
+          </tr>
+
+          <tr >
+            <td  rowSpan="2" >Team Five</td>
+            <td>1212</td>
+            <td>Abdullah Momin</td>
+            <td>bsse1212@iit.du.ac.bd</td>
+            <td rowSpan="2"> Dr. Suman Ahmed </td>
+          </tr>
+          <tr >
+            <td>1209</td>
+            <td>MD. Sakib Al Hasan</td>
+            <td>bsse1209@iit.du.ac.bd</td>
+          </tr>
+
+          <tr className={classes.gap} >
+            <td rowSpan="2">Team Six</td>
+            <td>1206</td>
+            <td>Galib</td>
+            <td>bsse1206@iit.du.ac.bd</td>
+            <td rowSpan="2"> </td>
+          </tr>
+          <tr >
+            <td>1256</td>
+            <td>Rashik</td>
+            <td>bsse1256@iit.du.ac.bd</td> 
+          </tr>
+
+          <tr >
+            <td  rowSpan="2" >Team Seven</td>
+            <td>1220</td>
+            <td>Sifat Sikder</td>
+            <td>bsse1220@iit.du.ac.bd</td>
+            <td rowSpan="2"> Dr. Suman Ahmed </td>
+          </tr>
+          <tr >
+            <td>1205</td>
+            <td>Tasnia Esha</td>
+            <td>bsse1205@iit.du.ac.bd</td>
+          </tr>
+
+          <tr >
+            <td  rowSpan="2" >Team Eight</td>
+            <td>1203</td>
+            <td>Sazzad Hossain</td>
+            <td>bsse1203@iit.du.ac.bd</td>
+            <td rowSpan="2"> Dr. B M Mainul Hossain </td>
+          </tr>
+          <tr >
+            <td>1233</td>
+            <td>Mehzabin Haque</td>
+            <td>bsse1233@iit.du.ac.bd</td>
           </tr>
 
 

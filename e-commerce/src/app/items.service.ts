@@ -26,4 +26,22 @@ export class ItemsService {
 
   }
 
+  itemToBeUpdated:Item=new Item();
+
+  setItemToBeUpdated(index:number):void{
+    let item=this.items.at(index);
+    if(item!=null){
+      this.itemToBeUpdated=item;
+    }
+
+
+
+  }
+  getItemToBeUpdated():Item{
+    return this.itemToBeUpdated;
+
+
+  }
+
+
 }

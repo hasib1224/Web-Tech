@@ -32,7 +32,7 @@ export default function TeachersProfileGrid() {
           <h4>Abir Adnan</h4>
           <h5>Roll: 1334</h5>
           <h5>Email: abir123@gmail.com</h5>
-          <p className="card-text">Currently Working on .....</p>
+          <p className="card-text">Interested to implement Web Application in SPL-2</p>
           <br />
         </div>
       </div>

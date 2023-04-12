@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CustomerNameComponent } from './customer-name/customer-name.component';
 import { ItemListComponent } from './item-list/item-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { UpdateItemComponent } from './update-item/update-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CustomerNameComponent,
-    ItemListComponent
+    ItemListComponent,
+    NavbarComponent,
+    UpdateItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

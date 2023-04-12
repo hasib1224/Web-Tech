@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import StuNav from "./StuNav";
-import blank from "../Assets/images/blank.png";
+import blank from "../Assets/images/naushinmam.jpg";
 import icon from "../Assets/images/sch-icon.png";
 import classNamees from "../styles/StuProfile.module.css";
 import Notice from "./Modal";
@@ -34,7 +34,7 @@ export default function TeachersProfileGrid() {
         </div> */}
         <img
           className="card-img-top"
-          style={{ margin: "20px" }}
+          style={{ margin: "20px", width: "40px", height: "40px" }}
           src={blank}
           alt="Card image cap"
         />

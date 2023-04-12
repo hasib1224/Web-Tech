@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Item } from '../item';
 import {ItemsService} from '../items.service'
 
@@ -8,7 +9,7 @@ import {ItemsService} from '../items.service'
   styleUrls: ['./item-list.component.css']
 })
 export class ItemListComponent implements OnInit {
-  constructor(private itemService:ItemsService){}
+  constructor(private itemService:ItemsService,private router: Router){}
   
   myItem: Item[]=[];
   ngOnInit(): void{
@@ -27,6 +28,19 @@ export class ItemListComponent implements OnInit {
     // alert(this.myItem[item_id].quantity);
   this.itemService.changeItems(item_id);
   }
+
+  // updateItem(index:number):void{
+  //   this.router.navigate(["update"])
+
+  // }
+
+  updateItem(index:number):void{
+    this.itemService.setItemToBeUpdated(index);
+    this.router.navigate(["update"]);
+
+  }
+
+  
 
 
 

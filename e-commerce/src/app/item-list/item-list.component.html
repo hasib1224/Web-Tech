@@ -2,14 +2,19 @@
 
 <ul>
    
-        <li *ngFor="let item of myItem">
+        <li *ngFor="let item of myItem; let i=index">
            <h3>{{item.name}}</h3>
             <p>Price:{{item.price}}</p>
             <p>Quantity:{{item.quantity}}</p>
             <!-- <button *ngIf="item.quantity>0" (click)="requestView(item.name)">Buy</button>
             <button *ngIf="item.quantity<=0">Stock Out</button>
              -->
-            <button *ngIf="item.quantity>0" (click)="buyItem(item.id)">Buy</button>
+
+
+             <!-- this function change the value of item -->
+            <!-- <button *ngIf="item.quantity>0" (click)="buyItem(item.id)">Update</button> -->
+            <button  (click)="updateItem(i)">Update</button>
+
         </li>
     
     
