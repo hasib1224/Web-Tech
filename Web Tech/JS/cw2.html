@@ -1,34 +1,45 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p id="p1">Programming</p>
+  </head>
+  <body>
+    <div id="header">
+        <h1>Welcome to my<br> website</h1>
+        <p>Here you can find all kinds of interesting content.</p>
+    </div>
+    <p >Programming</p>
     <!-- <button onclick="document.getElementById('p1').innerHTML='WebTech'"></button> -->
-    <button ondblclick="blue()">okay</button>    
+    <button ondblclick="blue()">okay</button>
     <!-- <p ondblclick="myFunction()">Double-click me</p> -->
 
     <script>
-        // let para1=document.getElementById('p1');
-        // para1.style.backgroundColor="blue";
-        // para1.style.border="2px solid";
+      // let para1=document.getElementById('p1');
+      // para1.style.backgroundColor="blue";
+      // para1.style.border="2px solid";
 
+      function okay() {
+        alert("okay");
+      }
 
-        function okay(){
-            alert("okay");
-        }
+      function blue() {
+        let para1 = document.getElementById("p1");
+        para1.style.color = "red";
+      }
 
-        function blue(){
-            let para1=document.getElementById('p1');
-            para1.style.color="red";
-        }
+      const name = window.prompt("What's your name?", "John Doe");
+      if (name !== null) {
+        window.alert(`Hello, ${name}!`);
         
+      }
 
-
+      let head=document.getElementById("header");
+      console.log(head.textContent);
+      console.log(head.innerText);
+      console.log(head.innerHTML);
 
     </script>
-</body>
+  </body>
 </html>

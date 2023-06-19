@@ -27,3 +27,17 @@ const cars = [
 //console.log(b);
 //console.log(cars.sort(function(a, b){return a.year - b.year}));
 console.log(Math.ceil(3.56));
+
+class Person {
+    static species = "Homo sapiens";
+   
+  
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+  }
+  
+  console.log(Person.species);
+  
+  
