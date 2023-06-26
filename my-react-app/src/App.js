@@ -9,7 +9,7 @@ import ShowCount from './Component/HigherOrderCom/ShowCount.js';
 import ShowCoun from './Component/HigherOrderCom/HOC/ShowCoun.js';
 // import Show from './Component/RenderProps/Show.js';
 import Show from './Component/ContextAPI/Show.js';
-
+import Counter from './Component/UseReducer/Counter.js';
 
 
 
@@ -27,7 +27,8 @@ function App() {
           {/* <Route path='/' element={< Decoration/>}/> */}
           {/* <Route path='/' element={<ShowCount/>}/> */}
           {/* <Route path='/' element={<ShowCoun/>}/> */}
-          <Route path='/' element={<Show/>}/>
+          {/* <Route path='/' element={<Show/>}/> */}
+          <Route path='/' element={<Counter/>}/>
 
 
           </Routes>
