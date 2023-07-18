@@ -1,0 +1,8 @@
+{
+      "editor.formatOnPaste": true,
+      "editor.formatOnSave": true,
+      "editor.lineHeight": 2,
+      "editor.tabSize": 8,
+      "prettier.tabWidth": 2,
+      "thunder-client.indentSize": 2
+}
